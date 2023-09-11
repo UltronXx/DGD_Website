@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Department of Graphic Design</title>
+        <meta name="viewport" content="width =device-width, initial-scale =1">
+        <style>
+           *{
+            padding: 0;
+            margin: 0;
+            font-family:'Nexa', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+           }
+
+           .header{
+            height: 100vh;
+            width: 100%;
+            background-image: url(images/bigArtboard\ 1@72x.png);
+            background-position: center;
+            background-size: cover;
+           }
+
+           nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            }
+            
+            
+            nav ul li{
+                list-style-type: none;
+                display: inline-block;
+                justify-content: center;
+                padding: 5px 25px;
+                margin-right: 0px;
+                margin-bottom: 50px;
+                align-items: center;
+            }
+            nav ul li a{
+                color: whitesmoke;
+                text-decoration: none;
+                font-weight: bold; 
+                text-transform: capitalize;
+            }
+            nav ul li a:hover{
+                color:deepskyblue;
+                transition: 0.5s;
+            }
+            .logobox{
+                height: 50px;
+                width: auto;
+                background-color: white;
+                background-position: center;
+                margin-bottom: 30px;
+            }
+            .logobox2{
+                height: 50px;
+                width: auto;
+                background-color: bisque transparent;
+                background-position: center;
+                align-items: center;
+                background-image: url(images/logotemp.png);
+                margin-top: 5%;
+            }
+            .content{
+                position: center;
+                padding: 40px;
+                margin-top:10px;
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+        
+            }
+            h1{
+                color:whitesmoke;
+                font-size: 100px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: 800;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+
+            h3{ 
+                color: rgb(237, 237, 237);
+                font-size: 35px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: 600;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+            h4{ 
+                color: rgb(237, 237, 237);
+                letter-spacing: 2px;
+                font-size: 20px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-kerning: -100px;
+                font-weight: 500;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .line{
+
+                height: 12px;
+                width: 25%;
+                background-color: white;
+                border-radius: 50px;
+                margin-top: 2%;
+                
+            }
+
+
+
+
+
+
+
+
+
+            .his-main{
+                width: 100%;
+                height: 1200px;
+                padding-top: 10%;
+                background-color: rgb(72, 8, 92);
+                background-image: url(images/items.png);
+                align-items: center;
+                background-repeat: no-repeat;
+                
+            }
+            .char-main{
+                padding-top: 5%;
+                margin-left: 20%;
+                margin-right: 20%;
+                align-items: center;
+
+            }
+            .char-main h3{
+                font-weight:700;
+                font-size: 80px;
+            }
+            p{
+                color: rgb(237, 237, 237);
+                font-size: 20px;
+                text-align: center;
+            }
+            .space{
+                height: 30px;
+                width: auto;
+                align-items: center;
+            }
+
+            .btn{
+                height: 20px;
+                width: auto;
+                align-items: center;
+                display: flex;
+                padding: 20% 30%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .btn button {
+                background-color: white;
+                height: 50px;
+                width: 300px;
+                border-radius: 10px ;
+                color: black;
+                font-size: 18px;
+                font-weight: 700;
+                border-color: transparent;
+                transition: .3s;
+
+            }
+
+            .btn button:hover{
+                cursor: pointer;
+                transform: scale(1.1);}
+
+
+            .his-main h3 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 70px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            
+         
+            
+
+
+
+
+            
+
+            .val-main{
+                width: 100%;
+                height: 900px;
+                padding-top:10%;
+                background-color: rgb(72, 8, 92);
+                align-items: left;
+                display: wrap;
+                
+
+            }
+
+            .val-lst{
+                
+                margin-left: 20%;
+                margin-right: 20%;
+                align-items: center;
+            }
+            
+            
+            .img-box img{
+                height: 100px;
+                width: auto;
+                padding-top: 10px;
+                align-items: center;
+                margin-top: 30px;
+                float:left;
+            }
+            
+
+            .val-main h3 { 
+                margin-top: 0px;
+                text-align: left;
+                padding-left:160px;
+                padding-top: 50px;
+                font-weight: 700;
+            }
+
+            .val-main p{
+                text-align: left;
+                padding-left: 160px;
+                padding-top: 2px;
+            }
+            .val-main h4 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 70px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+
+
+
+
+
+
+            .val-main2{
+                width: 100%;
+                height: 2600px;
+                padding-top:10%;
+                background-color: rgb(72, 8, 92);
+                align-items: left;
+                display: wrap;
+                background-image: url(images/item2.png);
+                background-repeat: no-repeat;
+         
+
+            }
+
+            .val-lst2{
+                
+                margin-left: 20%;
+                margin-right: 20%;
+                align-items: center;
+            }
+
+            .img-box img{
+                height: 100px;
+                width: auto;
+                padding-top: 10px;
+                align-items: left;
+                margin-top: 30px;
+                float:left;
+            }
+
+            .btn2{
+                height: 0px;
+                width: auto;
+                align-items: center;
+                display: flex;
+                padding: 5% 5%;
+                margin-left: 0px;;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .btn2 button {
+                background-color: white;
+                height: 50px;
+                width: 500px;
+                border-radius: 10px ;
+                color: black;
+                font-size: 18px;
+                font-weight: 700;
+                
+                transition: .3s;
+                border: 2px solid transparent;
+
+            }
+
+            .btn2 button:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+                
+
+            }
+
+            .val-main2 h3 { 
+                margin-top: 0px;
+                text-align: left;
+                padding-left:160px;
+                padding-top: 50px;
+                font-weight: 700;
+            }
+
+
+
+            .val-main2 p{
+                text-align: left;
+                padding-left: 160px;
+                padding-top: 2px;
+            }
+            .val-main2 h4 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 70px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rights{
+                background-color: rgb(72, 8, 92);
+                height: 300px;
+                width: 100%;
+                padding-left: 10%;
+                padding-right: 10%;
+            
+            }
+
+            .rights ribox{
+                background-color: rgb(72, 8, 92)transparent;
+                margin-top:10%;
+                align-items: center; 
+
+            }
+            
+
+
+
+
+
+
+
+            @media screen and (max-width: 770px){
+               
+                .content{
+                position: center;
+                padding: 20px;
+                margin-top:30px;
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+            h1{
+                color:whitesmoke;
+                font-size: 40px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: 800;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            h3{ 
+                color: rgb(237, 237, 237);
+                font-size: 20px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: 600;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+            h4{ 
+                color: rgb(237, 237, 237);
+                letter-spacing: 2px;
+                font-size: 12px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-kerning: -100px;
+                font-weight: 500;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+            .line{
+
+                height: 8px;
+                width: 50%;
+                background-color: white;
+                border-radius: 50px;
+                margin-top: 2%;
+
+                }
+
+
+                
+
+
+
+                .val-main{
+                width: 100%;
+                height: 1000px;
+                margin-top:-50%;
+                background-color: rgb(72, 8, 92);
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+
+            }
+
+            .val-lst{
+                
+                margin-left: 0%;
+                margin-right: 5%;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            
+            .img-box img{
+                height: 100px;
+                width: auto;
+                padding: px;
+                align-items: center;
+                margin: 20px;
+                float:left;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+
+            .val-main h3 { 
+                margin-top: 0px;
+                text-align: left;
+                padding-left:30px;
+                padding-top: 50px;
+                font-weight: 700;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .val-main p{
+                text-align: left;
+                margin-left:0px;
+                padding-top: 0px;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .val-main h4 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 40px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+
+
+            
+
+            
+
+            .his-main{
+                width: 100%;
+                height: 1500px;
+                padding-top: 10%;
+                background-color: rgb(72, 8, 92);
+                background-image: url(images/items.png);
+                align-items: center;
+                background-repeat: no-repeat;
+                
+            }
+            .char-main{
+                padding-top: 5%;
+                margin-left: 10%;
+                margin-right: 10%;
+                align-items: center;
+
+            }
+            .char-main h3{
+                font-weight:500;
+                font-size: 30px;
+            }
+
+            p{
+                color: rgb(237, 237, 237);
+                font-size: 16px;
+                text-align: center;
+            }
+            
+            .space{
+                height: 30px;
+                width: auto;
+                align-items: center;
+            }
+
+            .btn{
+                height: 20px;
+                width: auto;
+                align-items: center;
+                display: flex;
+                padding: 20% 30%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .btn button {
+                background-color: white;
+                height: 30px;
+                width: 250px;
+                border-radius: 5px ;
+                color: black;
+                font-size: 14px;
+                font-weight: 700;
+                border-color: transparent;
+
+            }
+            .his-main h3 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 50px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+
+
+
+
+
+
+                
+            .val-main2{
+                width: 100%;
+                height: 3000px;
+                padding-top:0%;
+                background-color: rgb(72, 8, 92);
+                align-items: left;
+                display: wrap;
+                background-image: url(images/item2.png);
+                background-repeat: no-repeat;
+         
+
+            }
+
+            .val-lst2{
+                
+                margin-left: 0%;
+                margin-right: 10%;
+                align-items: center;
+            }
+
+            .img-box img{
+                height: 100px;
+                width: auto;
+                padding-top: 10px;
+                align-items: left;
+                margin-top: 30px;
+                float:left;
+            }
+
+            .btn2{
+                height: 20px;
+                width: auto;
+                align-items: center;
+                display: flex;
+                padding: 15% 30%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .btn2 button {
+                background-color: white;
+                height: 30px;
+                width: 300px;
+                border-radius: 5px ;
+                color: black;
+                font-size: 14px;
+                font-weight: 700;
+                border-color: transparent;
+            }
+
+
+            .val-main2 h3 { 
+                margin-top: 0px;
+                text-align: left;
+                padding-left:160px;
+                padding-top: 50px;
+                font-weight: 700;
+            }
+
+             .val-main2 p{
+                text-align: left;
+                padding-left: 160px;
+                padding-top: 2px;
+            }
+            .val-main2 h4 { 
+                margin-top: 0px;
+                text-align: center;
+                padding-top: 50px;
+                font-weight: 700;
+                font-size: 45px;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+       
+
+            .btn2 button:hover{
+                cursor: pointer;
+                transform: scale(1.1);}
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+                
+            
+
+            
+
+
+
+            
+            
+
+    
+
+
+
+
+
+
+          
+
+        </style>
+    </head>
+    <body>
+        <!---Landing page start -->
+        
+        <div class="header">
+        <nav> 
+        </nav>
+
+        <div class="logobox">
+            <div class="logobox2"></div>
+    
+    </div>
+        <div class="content" > 
+            <h4>Welcome to </h4>
+            <h3>The Department of</h3>
+            <h1> Graphic Design </h1> </h1>
+            <h3>University of Education, Winneba</h3>
+            <div class="line "></div>
+
+        </div>
+        </div>  
+        
+        
+
+
+
+
+
+
+        <!---History statr -->
+
+        <section class="his-main">
+            <h3> About the Department </h3>
+            <div class="char-main">
+
+                <p> The Depariment of Graphic Design attained a full departmental 
+                    status in 2007 after it had existed as an Academic Unit under
+                     the Department of Art Education since the inception of the 
+                     University of Education, Winneba in 1993. The first batch of 
+                     students were admitted in 2006/2007 Academic Year to pursue a Bachelor 
+                     of Arts (Graphic Design) degree. Its commencement was largely 
+                     informed by the growth in graphic design industries in the country 
+                     with consequent growing demands for professionally trained graphic 
+                     designers. 
+
+                </p>
+                <div class="space"> </div>
+                
+                <p> The Department of Graphic Design (DGD) at the 
+                        University of Education, Winneba in Ghana is well 
+                        positioned to deliver effectively on its mandated duties. 
+                        Organized by the effective leadership of previous heads, 
+                        the Department has not relented in its efforts towards 
+                        the development of a creativity-driven community of s
+                        tudents and staff committed to the active interrelationship 
+                        of thoughts, procedures and praxis. 
+
+                    </p>
+                         <div class="space"> </div>
+
+                         <p> The Department of Graphic Desing remains resolute in the 
+                            conviction that training students in the beneficial engagement 
+                            of their creative sensibilities, intuitive perceptions, feelings, 
+                            experiences and imaginations, is necessary for our collective efforts 
+                            towards growth and development. 
+                        </p>
+
+                             <div class="space"> </div>
+
+                         <p> The programme aims to provide opportunity for the study of an 
+                            internationally recognized bachelor of arts programme in theory and 
+                            practice of Graphic Design; develop appropriate research skills; and provide 
+                            opportunity for producing a sustained body of creative graphic design works for 
+                            industrial and educational development.
+                        </p>
+                        
+
+                             <div class="btn"> 
+                             
+                             <a href="https://uew.edu.gh/academic-programmes/b-graphic-design" target="_blank"> 
+                                <button type="button">Tap here to read more </button></a>
+                            </div>
+                
+                 </div>
+                 
+        </section>
+
+        <!-- Values, Mission, Vision Start-->
+
+        <section class="val-main">
+            <h4> Cherished Aims </h4>
+            <div class="val-lst"> 
+                
+                <div class="img-box">
+                
+                <img src="images/values 208px.png">
+            </div>
+
+                <h3> Values </h3>
+                <p> Honesty, humility, Hardword, Oppenness, 
+                    Fairness, Tolerance, Respect for people and Nature. 
+                </p>
+            </div>
+
+
+                <div class="val-lst"> <div class="img-box">
+                
+                    <img src="images/mission_480px.png">
+                </div>
+    
+                    <h3> Mission </h3>
+                    <p> The department will conduct research, provide 
+                        training, consultancy and education services, influence 
+                        policy in Graphic Design Education and technology in Ghana
+ 
+                    </p>
+                </div>
+
+
+                    <div class="val-lst"> <div class="img-box">
+                
+                        <img src="images/Vision_480px.png">
+                    </div>
+        
+                        <h3> Vision </h3>
+                        <p> The department shall become internationally 
+                            renowed for the training of Artists and Graphic designers 
+ 
+                        </p>
+                    </div>
+            
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PathwaysStart-->
+
+        <section class="val-main2">
+            <h4> Pathways in the Department </h4>
+            <div class="val-lst2"> 
+                
+                <div class="img-box">
+                
+                <img src="images/advertising500px.png">
+            </div>
+
+                <h3> Bachelor of Art in Adertising Design</h3>
+                <p> The Advertising Pathway consists of gaining knowledge in 
+                    branding of companies through designing and brand building  
+                    on how products and services are made viable to consumers 
+                through Design and knowledge building in the operations of various 
+            Adevrtising companies in the country.  </p>
+            </div>
+
+            <div class="btn2"> 
+                             
+                <a href="PDF/requirementsad.pdf" target="_blank"> 
+                   <button type="button">View requirements and Career pathways </button></a>
+               </div>
+
+
+                <div class="val-lst2"> <div class="img-box">
+                
+                    <img src="images/Graphic design.png">
+                </div>
+    
+                    <h3> Bachelor of Art in Graphic Design </h3>
+                    <p> The Graphic Design pathway consists of gaining knowledge in the basics 
+                        of effective communication through putting together text and images to foster 
+                        visual communication in all aspects needed.  
+ 
+                    </p>
+                </div>
+
+                    <div class="btn2"> 
+                             
+                        <a href="PDF/requirementsgra.pdf" target="_blank"> 
+                           <button type="button">View requirements and Career pathways </button></a>
+                       </div>
+
+                
+
+
+                    <div class="val-lst2"> <div class="img-box">
+                
+                        <img src="images/multimedia.png">
+                    </div>
+        
+                        <h3> Bachelor of Art in Multimedia </h3>
+                        <p> The Multimedia pathway consists of gaining knowledge within the use 3D
+                            softwares for modelling, rigging and character design. You will also gain 
+                            adverse knwoledge in handling tools like the camera for photography and 
+                            videography. 
+                        </p>
+                    </div>
+                    <div class="btn2"> 
+                             
+                        <a href="PDF/requirementsmult.pdf" target="_blank"> 
+                           <button type="button">View requirements and Career pathways </button></a>
+                       </div>
+
+
+
+                    
+                    <div class="val-lst2"> <div class="img-box">
+            
+                    <img src="images/diploma.png">
+                </div>
+    
+                    <h3> Diploma in Graphic Design </h3>
+                    <p> This pathway involves gaining step by step knowledge 
+                        of visual comminication within the aspect os Graphic Design 
+                        applying methods knowm for communication. 
+                    </p>
+                </div>
+
+                <div class="btn2"> 
+                             
+                    <a href="PDF/requirementsdip.pdf" target="_blank"> 
+                       <button type="button">View requirements and Career pathways </button></a>
+                   </div>
+
+
+
+                
+                <div class="val-lst2"> <div class="img-box">
+        
+                <img src="images/mphil.png">
+            </div>
+
+                <h3> Master of Philosophy in Visual Communication </h3>
+                <p> This pathway involves mastering knowledge in your preffered
+                    field within the aspect of art studies. 
+
+                </p>
+            </div>
+
+            <div class="btn2"> 
+                             
+                <a href="PDF/requirementsmphil.pdf" target="_blank"> 
+                   <button type="button">View requirements and Career pathways </button></a>
+               </div>  
+
+            </div>
+                
+                <div class="val-lst2"> <div class="img-box">
+        
+                <img src="images/animatepx.png">
+            </div>
+
+                <h3> Bachelor of Fine Art in Animation </h3>
+                <p> The BFA in Animation programme is geared towrads harnessing 
+                    your creativity into building a carrer driven activities like 
+                    Animation Production, Digital 2d Animation, Lighting and 
+                    Character Design using standard industry software. 
+
+                </p>
+            </div>
+
+            <div class="btn2"> 
+                             
+                <a href="PDF/requirementsbfa.pdf" target="_blank"> 
+                   <button type="button">View requirements and Career pathways </button></a>
+               </div>  
+
+            </div>
+
+        </section>
+
+        <div class="rights">
+            <div class="ribox"> 
+                <p>All rights reserved copyright Department Of Graphic Design</p>
+                <p>Presented by Timothy Hornu | 202104285</p>
+
+
+            </div>
+        
+            </div>
+
+
+    
+           
+    </body>
+    </html>
